@@ -20,17 +20,17 @@ The start button to begin gameplay.
 ## Item Description
 
 - Red Gem Duplicates the ball that collides with it.
-![img](/gem1.png "Red Gem")
+![img](/gem1.png "Red Gem") {width: 30px;}
 - Blue Gem Freezes the ball in place.
-![img](gem5.png "Blue Gem")
+![img](gem5.png "Blue Gem"){width: 30px;}
 - Yellow Gem does nothing but grant 5 points.
-![img](./gem3.png "Yellow Gem")
+![img](./gem3.png "Yellow Gem"){width: 30px;}
 - Purple Gem grants the bounciness of a soccer ball.
-![img](gem4.png)
+![img](gem4.png "Purple Gem"){width: 30px;}
 - Green Gem Grows the ball by half its size.
-![img](/gem2.png)
+![img](/gem2.png "Green Gem"){width: 30px;}
 - Coins grant 10 points
-![img](bitcoin.png "The coin")
+![img](bitcoin.png "The coin"){width: 30px;}
 
 ## Controls
 
