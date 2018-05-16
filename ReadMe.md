@@ -30,7 +30,7 @@ The start button to begin gameplay.
 - Green Gem Grows the ball by half its size.
 ![alttext](https://i.gyazo.com/b112b11f53e7e4ea04063fc50997cffa.png "Green Gem")
 - Coins grant 10 points
-![alttext](https://i.gyazo.com/b869afbe533bad4c059b5df73e518fbd.png "Red Gem")
+![alttext](bitcoin.png "Red Gem")
 
 ## Controls
 
