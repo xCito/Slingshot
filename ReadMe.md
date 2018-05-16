@@ -20,11 +20,17 @@ The start button to begin gameplay.
 ## Item Description
 
 - Red Gem Duplicates the ball that collides with it.
+![alttext](https://i.gyazo.com/b869afbe533bad4c059b5df73e518fbd.png "Red Gem")
 - Blue Gem Freezes the ball in place.
+![alttext](https://i.gyazo.com/0efbe6f558e41e62b719d1769dacc304.png "Blue Gem")
 - Yellow Gem does nothing but grant 5 points.
+![alttext](https://i.gyazo.com/a3de62a158ee0b24604d846df53be6db.png "Yellow Gem")
 - Purple Gem grants the bounciness of a soccer ball.
+![alttext](https://i.gyazo.com/7d5ee2a97dbab83041ee2a76dbe55728.png "Purple Gem")
 - Green Gem Grows the ball by half its size.
+![alttext](https://i.gyazo.com/b112b11f53e7e4ea04063fc50997cffa.png "Green Gem")
 - Coins grant 10 points
+![alttext](https://i.gyazo.com/b869afbe533bad4c059b5df73e518fbd.png "Red Gem")
 
 ## Controls
 
