@@ -3,8 +3,10 @@
 This is the personal project I created for my Video Game Programming course.
 There isn't a real objective other than slingshotting balls across the map to gain points by collecting coins and gems to help/hinder you. In the menu, you can change:
 
-<img src="GamePlayScreenShot1.png" alt="Game Play Screenshot" width="400" >
-<img src="GamePlayScreenShot2.png" alt="Game Play Screenshot" width="400" >
+<img src="GamePlayScreenShot1.png" alt="Game Play Screenshot" width="400" float="left" >
+<img src="GamePlayScreenShot2.png" alt="Game Play Screenshot" width="400" float="clear">
+
+
 ## Menu Description
 
 - Slider to control number of life-lines you have (random balls)
@@ -17,7 +19,8 @@ There isn't a real objective other than slingshotting balls across the map to ga
 
 The start button to begin gameplay.
 
-<img src="MenuScreenShot2.png" alt="Main Menu Screenshot" width="500" >
+<img src="MenuScreenShot2.png" alt="Main Menu Screenshot" width="500">
+
 
 
 ## Item Description
@@ -28,6 +31,8 @@ The start button to begin gameplay.
 - <img src="gem4.png" alt="Purple Gem" width="50" > Purple Gem grants the bounciness of a soccer ball.
 - <img src="gem2.png" alt="Green Gem" width="50" > Green Gem Grows the ball by half its size.
 - <img src="bitcoin.gif" alt="The coin" width="50" > Coins grant 10 points
+
+
 
 ## Controls
 
