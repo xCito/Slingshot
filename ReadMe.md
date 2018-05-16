@@ -36,7 +36,7 @@ The start button to begin gameplay.
 
 ## Controls
 
-Use the mouse to draw back the ball by holding down the left click and dragging.
-To go onto the next ball/Life-line, press SPACE.
+- Use the MOUSE LEFT CLICK to draw back the ball by holding down the left click and dragging.
+- press SPACE. To go onto the next ball/Life-line.
 
 ### !!! There will be bugs and crashing !!!
