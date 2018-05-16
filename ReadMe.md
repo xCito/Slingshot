@@ -30,7 +30,7 @@ The start button to begin gameplay.
 - Green Gem Grows the ball by half its size.
 ![img](/gem2.png "Green Gem"){width: 30px;}
 - Coins grant 10 points
-![img](bitcoin.png "The coin"){width: 30px;}
+<img src="bitcoin.png" alt="The coin" width="30" >
 
 ## Controls
 
