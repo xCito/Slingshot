@@ -24,7 +24,7 @@ The start button to begin gameplay.
 - Blue Gem Freezes the ball in place.
 ![img](gem5.png "Blue Gem")
 - Yellow Gem does nothing but grant 5 points.
-![img](/gem3.png "Yellow Gem")
+![img](./gem3.png "Yellow Gem")
 - Purple Gem grants the bounciness of a soccer ball.
 ![img](gem4.png)
 - Green Gem Grows the ball by half its size.
