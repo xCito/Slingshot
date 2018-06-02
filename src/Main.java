@@ -24,7 +24,7 @@ public class Main extends Applet implements Runnable, MouseListener, MouseMotion
 	Image background; 
 	Image Screen;
     Graphics ScreenG;
-    BackgroundAnimation bg;
+    BackgroundAnimation bg; 
     
     static final short leftBound = 200;
     static final short rightBound = 1000;
@@ -50,7 +50,7 @@ public class Main extends Applet implements Runnable, MouseListener, MouseMotion
 	Rectangle rect = new Rectangle(100, 100, 30, 30);
 	
 	// Menu Items
-	Bubble[] bubble = new Bubble[100];
+	Bubble[] bubble = new Bubble[50];
 	
 	Button startBtn;
 	Slider lifeSlider;
@@ -413,8 +413,8 @@ public class Main extends Applet implements Runnable, MouseListener, MouseMotion
 		rGemSlider = new Slider(200, 150, 30, 400, 200, "   Red");
 		yGemSlider = new Slider(270, 150, 30, 400, 50, " Yellow");
 		pGemSlider = new Slider(340, 150, 30, 400, 50, " Purple");
-		gGemSlider = new Slider(410, 150, 30, 400, 50, "  Green");
-		coinSlider = new Slider(480, 150, 30, 400, 600,"  Coins");
+		gGemSlider = new Slider(410, 150, 30, 400, 10, "  Green");
+		coinSlider = new Slider(480, 150, 30, 400, 500,"  Coins");
 		
 		bGemSlider.setColor(new Color(96, 117, 255));
 		rGemSlider.setColor(new Color(221, 19, 19));
@@ -432,9 +432,9 @@ public class Main extends Applet implements Runnable, MouseListener, MouseMotion
 		numCoins = coinSlider.getValue();
 		
 		for(int i=0; i<bubble.length; ++i) {
-			bubble[i] = new Bubble(r.nextInt(800)+ 100, r.nextInt(400)+100, 20);
-			bubble[i].vx = r.nextInt(5);		// range is 1, 0 ,-1
-			bubble[i].vy = r.nextInt(5);		// range is 1, 0 ,-1
+			bubble[i] = new Bubble(r.nextInt(800)+ 100, r.nextInt(400)+100, 40);
+			bubble[i].vx = r.nextInt(5)-2;		// range is 1, 0 ,-1
+			bubble[i].vy = r.nextInt(5)-2;		// range is 1, 0 ,-1
 		}
 	}
 	

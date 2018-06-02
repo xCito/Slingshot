@@ -25,7 +25,7 @@ public class Ball extends Circle
 		super(x,y,r);
 		bounceFactor = b;
 		mass = m;
-		minVelocity = 1.1f;
+		minVelocity = 0.5f;
 		distance = x;
 	
 	}

@@ -4,7 +4,8 @@
 */
 
 public class Physics {
-	static final float gravity = 9.0f;
-	static final float xdrag = .3f;
+	static final float gravity = 6.0f;
+	static final float xdrag = .1f;
 	static final float ydrag = .7f;
 }
+ 	
