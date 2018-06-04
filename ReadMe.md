@@ -3,8 +3,8 @@
 This is the personal project I created for my Video Game Programming course.
 There isn't a real objective other than slingshotting balls across the map to gain points by collecting coins and gems to help/hinder you. In the menu, you can change:
 
-<img src="screenshots/GamePlayScreenShot1.png" alt="Game Play Screenshot" width="400" float="left" >
-<img src="screenshots/GamePlayScreenShot2.png" alt="Game Play Screenshot" width="400" float="clear">
+<img src="screenshot/GamePlayScreenShot1.png" alt="Game Play Screenshot" width="400" float="left" >
+<img src="screenshot/GamePlayScreenShot2.png" alt="Game Play Screenshot" width="400" float="clear">
 
 
 ## Menu Description
@@ -19,7 +19,7 @@ There isn't a real objective other than slingshotting balls across the map to ga
 
 The start button to begin gameplay.
 
-<img src="screenshots/menuScreenShot.png" alt="Main Menu Screenshot" width="600">
+<img src="screenshot/menuScreenShot.png" alt="Main Menu Screenshot" width="600">
 
 *Now with a floating "bubbles" screen saver*
 
