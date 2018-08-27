@@ -120,7 +120,8 @@ public class Main extends Applet implements Runnable, MouseListener, MouseMotion
 				{
 					if(menuOpen)
 					{
-						// Collision detection between active balls 
+						// Screen saver bubble animation
+						// Collision detection between bubbles 
 						for(int i=0, size = bubble.length; i < size; ++i)
 							for(int j=0; j < size; ++j)
 								if(i != j)
@@ -132,14 +133,10 @@ public class Main extends Applet implements Runnable, MouseListener, MouseMotion
 						
 						collisionRecord.clear();
 						
+						// apply movement to all bubbles 
 						for(Bubble b: bubble)
 							b.move();
-						
-//						System.out.println("X: " + bubble[0].x);
-//						System.out.println("Y: " + bubble[0].y);
-//						System.out.println("Vx: " + bubble[0].vx);
-//						System.out.println("Vy: " + bubble[0].vy + "\n");
-						
+
 					}
 					else
 					{
@@ -152,20 +149,6 @@ public class Main extends Applet implements Runnable, MouseListener, MouseMotion
 						
 						}
 						
-					
-			//			// Collision detection between active ball and Gems 
-			//			//		(Main active BALL collide with gems)
-			//			for(int i=0; i<gem.size(); ++i)
-			//			{
-			//				Gem g = gem.get(i);
-			//				if( activeBalls.peekFirst().isCollision(g) ){
-			//					activeBalls.peekFirst().collideWith(g);
-			//					g.ability(activeBalls, 0);
-			//					points+=5;
-			//					gem.remove(g);
-			//					gameObj.remove(g);
-			//				}
-			//			}
 					
 						// Collision detection between active balls and Gems
 						//		(ALL active BALLS collide with gems)
@@ -184,6 +167,7 @@ public class Main extends Applet implements Runnable, MouseListener, MouseMotion
 							}
 						}
 						
+						
 						// Collision detection between active balls and Coins
 						for(int j=0, size = activeBalls.size(); j< size; ++j)
 						{
@@ -198,6 +182,7 @@ public class Main extends Applet implements Runnable, MouseListener, MouseMotion
 								}
 							}
 						}
+						
 						// Collision detection between active balls 
 						if(activeBalls.size() > 1)
 						{
@@ -272,10 +257,11 @@ public class Main extends Applet implements Runnable, MouseListener, MouseMotion
 			g.setFont(myFont);
 			g.drawString("Points: " + points, 935, 23);
 			
-			
+			// Draw the buttons
 			restartBtn.draw(g);
 			pauseBtn.draw(g);
 			
+			// Shows Pause modal screen
 			if(pause)
 			{
 				g.setColor(new Color(43, 54, 71, 150));
@@ -292,6 +278,7 @@ public class Main extends Applet implements Runnable, MouseListener, MouseMotion
 				g.drawString("PAUSED", 400, 400);
 			}
 			
+			// Shows GameOver modal screen
 			if(gameOver)
 			{
 				g.setColor(new Color(43, 54, 71, 150));
@@ -312,6 +299,9 @@ public class Main extends Applet implements Runnable, MouseListener, MouseMotion
 		
 	}
 	
+	/*
+	 * Draws the line-up of upcoming balls
+	 */
 	public void drawBallsBar(Graphics g)
 	{
 		g.setColor(Color.black);
@@ -346,23 +336,20 @@ public class Main extends Applet implements Runnable, MouseListener, MouseMotion
     	
     	
     	// Create the coins
-    	for(int i=0; i<numCoins; ++i)
-    	{
+    	for(int i=0; i<numCoins; ++i) {
     		Coin c = new Coin(r.nextInt(maxDistance-200)+100, r.nextInt(height-100));
     		coin.add(c);
     		gameObj.add(c);
     	}
     	
     	// Create the distance Markers
-    	for(int i=0; i<dm.length; ++i)
-    	{
+    	for(int i=0; i<dm.length; ++i) {
     		dm[i] = new DistanceMarker((i*width), 100, width+(i*width));
     		gameObj.add(dm[i]);
     	}
     	
     	// Create Balls to add to loading section
-    	for(int i=0; i< numLifeLine; ++i) 
-        {
+    	for(int i=0; i< numLifeLine; ++i) {
         	Ball b = getRandomBall();
         	b.freeze();
         	b.setSize(15);
@@ -374,9 +361,11 @@ public class Main extends Applet implements Runnable, MouseListener, MouseMotion
     	gem = createGems(); 
        	gameObj.addAll(gem);
         
+       	// Add sling-shot and background to gameObject list
         gameObj.add(sling);
         gameObj.add(bg);
         
+        // Releases the first ball in loading
         Ball b = inLoading.remove(0);
         b.resetSize();
         b.unfreeze();
@@ -384,6 +373,9 @@ public class Main extends Applet implements Runnable, MouseListener, MouseMotion
         activeBalls.add(b);
     }
 	
+	/*
+	 * Resets all the game flags back 
+	 */
 	public void restartGame()
 	{
 		gameObj.clear();
@@ -396,7 +388,6 @@ public class Main extends Applet implements Runnable, MouseListener, MouseMotion
 		pause = false;
 		menuOpen = true;
 		createGameObjects();
-		
 	}
 	
 	public void createUIObjects()
